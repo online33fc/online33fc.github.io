@@ -1,0 +1,247 @@
+/* Estilos Generales */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column; 
+  min-height: 100vh; 
+}
+
+header {
+  background-color: #50b3a2;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 10px; 
+}
+
+header img {
+  height: auto; 
+  width: 80px;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+header nav ul li {
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  display: block; 
+}
+
+header nav ul li:last-child {
+  margin-right: 0;
+}
+
+/* Asegúrate de que el contenido del header esté alineado a la izquierda */
+header nav {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidebar, .contact-info {
+  background-color: #e6f2f0;
+  width: 20%;
+  padding: 20px;
+}
+
+.project-info {
+  width: 55%;
+  padding: 20px;
+}
+
+.member-list, .team-members {
+  list-style-type: none;
+  padding: 0;
+}
+
+.member-list li a, .member h2 {
+  text-decoration: none;
+  color: #333333;
+  padding: 5px;
+  display: block;
+}
+
+.project-info h1, .member h2 {
+  color: #e8491d;
+}
+
+footer {
+  background-color: #50b3a2;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: auto;
+}
+
+/* Estilos para Miembros */
+.team-members {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.member {
+  background: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 23%;
+}
+
+.member img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+/* Estilos para Contacto */
+.feedback-form {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.feedback-form form, .feedback-form .design-principles {
+  width: 48%;
+}
+
+.feedback-form .design-principles {
+  background: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.feedback-form h2 {
+  color: #333333;
+  font-size: 20px;
+}
+
+.feedback-form ul {
+  list-style: inside;
+}
+
+.feedback-form label {
+  display: block;
+  margin: 10px 0;
+}
+
+/* Estilos Comunes de Formularios */
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+}
+
+input[type="submit"], button {
+  display: inline-block;
+  background: #e8491d;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover, button:hover {
+  background: #333333;
+}
+
+/* Añadir cualquier estilo adicional o personalizado necesario para otros elementos */
+.member-photo {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  object-fit: cover;  
+  margin-right: 8px; 
+}
+/*Texto centrado en contacto*/
+.main-container {
+  display: flex; /* Activa Flexbox */
+  flex-direction: column; /* Organiza los hijos de .container en una columna */
+  align-items: center; /* Alinea los hijos de .container en el centro horizontalmente */
+  text-align: center; /* Centra el texto de los hijos directos como <h1> y <p> */
+  margin: auto; /* Centra .container en el centro de la página si hay espacio disponible a los lados */
+  max-width: 800px; /* Ajusta al ancho máximo que desees para el contenedor */
+  width: 100%; /* Hace que .container llene el ancho disponible hasta max-width */
+}
+
+.feedback-form {
+  width: 100%; /* Hace que .feedback-form llene el ancho disponible dentro de .container */
+}
+
+.feedback-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.design-principles {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.design-principles li {
+  text-align: left; /* Asegura que el texto de cada ítem esté alineado a la izquierda */
+}
+
+/* Ajusta los estilos de los elementos <input>, <textarea>, y <select> si es necesario */
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+  width: 90%; /* O el ancho que prefieras */
+  margin: 10px 0; /* Añade un poco de margen arriba y abajo para cada elemento */
+}
+
+/* Si el botón no se centra con los estilos anteriores, también puedes intentar esto */
+button {
+  align-self: center; /* Esto alinea el botón al centro de su contenedor flex */
+}
+
+.main-title{
+  text-align: center;
+}
+
+.container h1{
+  text-align: center;
+}
+
+.member h2{
+  text-align: center;
+}

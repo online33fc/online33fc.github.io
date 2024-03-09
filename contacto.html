@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>¡Danos tu opinión!</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <ul>
+          <li><img src="img/logoFHiC.png" alt="Logo FHIC"></li> 
+          <li><a href="miembros.html">Miembros</a></li>
+          <li><a href="index.html">Proyecto Web</a></li>
+          <li class="current"><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <section class="main-container">
+    <h1>¡Danos tu opinión!</h1>
+    <p>Nos encantaría saber qué opinas sobre nuestra web.</p>
+    <div class="feedback-form">
+      <form>
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" placeholder="Tu nombre">
+        
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" placeholder="Tu correo electrónico">
+        
+        <label for="opinion">Tu opinión:</label>
+        <textarea id="opinion" name="opinion" placeholder="Escribe tu opinión aquí"></textarea>
+        
+        <label for="rating">Puntúanos de 1 a 5:</label>
+        <select id="rating" name="rating">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        
+        <button type="submit">Enviar</button>
+      </form>
+      
+      <div class="design-principles">
+        <h2>Los principios de diseño que hemos aplicado al diseñar el form son:</h2>
+        <ul>
+          <li>Primer principio: explicación</li>
+          <li>Segundo principio: explicación</li>
+          <li>Tercer principio: explicación</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+  <footer>
+    <p>Copyright © 2024 - Muscle Mastery</p>
+  </footer>
+</body>
+</html>
